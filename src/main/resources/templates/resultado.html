@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DnD</title>
+</head>
+<body>
+    <p>Sua soma é <span th:text="${resultado.soma}"></span></p>
+    <p>Seus números sorteados são: </p>
+
+    <ul th:each="numero : ${resultado.numeros}">
+        <li th:text="${numero}"></li>
+    </ul>
+</body>
+</html>
